@@ -17,13 +17,24 @@
 <body>
     <div class="backgroundMountains"></div>
     <div class="main">
-        <div class="page-1">
+        <div id="pageStart" class="page active">
             <h1>WOODLANDS</h1>
             <div class="centerContainer">
-                <button>ENTER</button>
+                <button onclick="nextScene()">ENTER</button>
             </div>
         </div>
-        <div id="chooseHero">
+        <div id="pageInfo" class="page centerContainer">
+            <p>In the land of "woodlands" a horrible force has taken the grip of the once lush and happy villagers.<br>
+                To beat evil and bla bla blablablablablablabla you must take on an adventure and fight for the future of
+                all little critters.
+                Will you take up on the challenge, stranger?</p>
+            <div class="dualButtons">
+                <button onclick="nextScene()">BE BRAVE</button>
+                <button>NOPE</button>
+            </div>
+        </div>
+
+        <div id="pageHero" class="page">
             <h2>CHOOSE YOUR HERO</h2>
             <div class="cardBox">
                 <div class="card">
