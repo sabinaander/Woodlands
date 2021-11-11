@@ -1,19 +1,46 @@
-html{
-    padding:0;
-    margin:0;
-}
+
 body{      
-    background: 
-    url(/media/Vector-1.png),
-    url(/media/Vector-2.png),
-    linear-gradient(254.46deg, rgba(5, 255, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 89.64%);
-    background-size: 100% 70%;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: linear-gradient(254.46deg, rgba(5, 255, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 89.64%);
     background-color: #00382E;
     height: 100vh;
     overflow-y: hidden;
+    padding:0;
+    margin:0;
 }
+
+.backgroundMountains{
+    background: 
+    url(/media/Vector-1.png),
+    url(/media/Vector-2.png);
+    background-size: 100% 70%;
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* opacity: 0; */
+    animation: fadeIn 10s ease-in-out;
+}
+
+.page-1{
+    animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+.main{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
 .cardBox{
     margin-top: 10rem;
     display: flex;
@@ -36,12 +63,30 @@ body{
     margin-top: -5vh;
 }
 
-h1, h2{
+h1, h2, h3, button{
     font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
 h1{
+    font-size: 7rem;
+}
+h2{
     font-size: 5rem;
+}
+.centerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+button{
+width: fit-content;
+font-size: 3rem;
+background-color: black;
+color:green;
+border: none;
+top: 50%;
+padding: 2rem;
 }
 
 .card-list {
