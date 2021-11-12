@@ -20,7 +20,7 @@
         <div id="pageStart" class="page active">
             <h1>WOODLANDS</h1>
             <div class="centerContainer">
-                <button onclick="nextScene()">ENTER</button>
+                <button onclick="displayEnterScene()">ENTER</button>
             </div>
         </div>
         <div id="pageInfo" class="page centerContainer">
@@ -29,9 +29,16 @@
                 all little critters.
                 Will you take up on the challenge, stranger?</p>
             <div class="dualButtons">
-                <button onclick="nextScene()">BE BRAVE</button>
-                <button>NOPE</button>
+                <button onclick="chooseHeroScene()">BE BRAVE</button>
+                <button onclick="displayDeclineScene()">NOPE</button>
             </div>
+        </div>
+        <div id="decline" class="declinePage page">
+            <img src="/media/tombstone.png">
+            <p>You've proven yourself worthless for this quest.<br>
+            Come back when you feel the meat.</p>
+            <button onclick="displayEnterScene()">PLAY AGAIN</button>
+
         </div>
 
         <div id="pageHero" class="page">
@@ -71,6 +78,7 @@
         </div>
     </div>
     </div>
+    <div></div>
 </body>
 
 </html>
