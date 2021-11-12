@@ -1,74 +1,33 @@
-// let activeScene = 0
+let activePage = 0
+const page = document.querySelector('#page')
 
-// const inventory = [2]
-// let inventory = 1
-// const activeScene  = []
-// let displayScene1 = function () {
-//     activeScene= 0 
-// }
+const pages = [{
+    content:`
+    <div class="fadein centerContainer">
+        <h1>Woodlands</h1>
+        <button onclick="changeScene(1)" class="blink">ENTER</button>
+    </div>
+    `
+},
+{//1
+    content:`
+    <div class="centerContainer">
+        <p>In the land of "woodlands" a horrible force has taken the grip of the once lush and happy villagers.<br>
+        To beat evil and bla bla blablablablablablabla you must take on an adventure and fight for the future of
+        all little critters.
+        Will you take up on the challenge, stranger?</p>
+        <div class="dualButtons">
+            <button onclick="changeScene(2)">I AM BRAVE</button>
+            <button onclick="changeScene(3)">NOPE</button>
+        </div>
+    </div>
+    `
+}
+]
 
-let displayEnterScene = function () {
-    const pageInfo = document.querySelector('#pageInfo')
-    pageInfo.classList.toggle("active")
-    const pageStart = document.querySelector('#pageStart')
-    pageStart.classList.toggle("active")    
+changeScene = function (nextPage) {
+    activePage = nextPage
+    page.innerHTML = pages[activePage].content
 }
 
-let chooseHeroScene = function () {
-    const pageHero = document.querySelector('#pageHero')
-    pageHero.classList.toggle("active")
-    const pageInfo = document.querySelector('#pageInfo')
-    pageInfo.classList.toggle("active")    
-}
-
-let displayDeclineScene = function(){
-        const pageDecline = document.querySelector('#decline')
-        pageDecline.classList.toggle("active")
-}
-
-
-// declineScene = function(){
-//     activescene= 5
-//     nextScene()
-// }
-// nextScene = function () {
-//     if (activeScene === 0) {
-//         displayEnterScene()
-//     }
-    
-//     // else if (activeScene === 1) {
-//     //     displayScene3()
-//     // }
-//     // else if (activeScene === 2) {
-//     //     // displayScene4()
-//     // }
-//     // else{
-//     // displayDeclineScene()
-//     // }
-    
-// }
-
-
-
-
-// 
-// // STATE  Olika scenes/rum/miljö
-// 
-
-// const scenes = [{
-//     nextScene:[1,4,6()]
-// }, {
-//     //First room with info
-//     element.classList.toggle("infoPage")
-//     activeScene = 1
-//     nextScene: [2]
-// }];
-
-// //     
-
-// function nextScene() {
-//     element.classList.toggle("infoPage");
-//     activeScene = 1;
-// }
-
-// function renderScene () {}
+changeScene(0)

@@ -3,7 +3,6 @@ body{
     background: linear-gradient(254.46deg, rgba(5, 255, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 89.64%);
     background-color: #00382E;
     height: 100vh;
-    /* overflow-y: hidden; */
     padding:0;
     margin:0;
 }
@@ -21,12 +20,12 @@ body{
 
 
 
-#pageStart{
+.fadein{
     animation: fadeIn 5s ease-in-out;
     flex-direction: column;
 }
 
-#pagestart button{
+.blink {
     animation: blink 2s infinite;
 }
 
@@ -56,7 +55,7 @@ body{
     height: 100%;
 }
 
-#pageInfo p{
+p{
     background: #00ff5f0f;
     width: 50%;
     font-size: 2rem;
@@ -68,6 +67,7 @@ body{
 
 .dualButtons{
     display: flex;
+    flex-direction: row;
     align-content: space-between;
     gap: 5rem;
 }
