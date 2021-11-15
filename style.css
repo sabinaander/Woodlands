@@ -101,6 +101,12 @@ body{
     text-align: center;
 }
 
+.errorText{
+    color: red;
+    font-size: 1.1rem;
+    margin-top: 2em;
+}
+
 .biggerFont{
     font-size: 2.5rem;
 }
@@ -162,11 +168,36 @@ input::placeholder{
     font-size: 1.5rem;
 }
 
-.charImg{
-    max-width: 30vw;
+.nextContainer{
+    position: relative;
+    text-align: center; 
     margin-top: -5vh;
 }
 
+.nextArrow{
+    max-width: 20vw;
+}
+
+
+
+.charImg{
+    max-width: 30vw;
+    margin-top: -5vh;
+    /* position: absolute;
+    animation: slideIn 3s infinite; */
+}
+
+.pixelImg{
+    max-width: 20vw;
+    margin-top: -5vh;
+    /* position: absolute;
+    animation: slideIn 3s infinite; */
+}
+
+/* @keyframes slideIn{
+from{margin-left:-100px;}
+top{margin-left:100px;}
+} */
 h1, h2, h3, button{
     font-family: 'Press Start 2P', cursive;
     text-align: center;
@@ -190,10 +221,14 @@ button{
 width: fit-content;
 font-size: 3rem;
 background-color: black;
-color:green;
+color:rgb(2, 129, 2);
 border: none;
 top: 50%;
 padding: 2rem;
+}
+
+.redText{
+    color: red;
 }
 
 .card-list {
