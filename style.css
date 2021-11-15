@@ -161,6 +161,7 @@ input::placeholder{
     align-items: center;
     padding: 4rem;
     display: flex;
+    margin-bottom: 3rem;
     /* gap: 4rem; */
 }
 
