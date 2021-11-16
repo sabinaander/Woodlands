@@ -162,7 +162,6 @@ input::placeholder{
     padding: 4rem;
     display: flex;
     margin-bottom: 3rem;
-    /* gap: 4rem; */
 }
 
 .card{   
@@ -196,21 +195,13 @@ input::placeholder{
 .charImg{
     max-width: 30vw;
     margin-top: -5vh;
-    /* position: absolute;
-    animation: slideIn 3s infinite; */
 }
 
 .pixelImg{
     max-width: 20vw;
     margin-top: -5vh;
-    /* position: absolute;
-    animation: slideIn 3s infinite; */
 }
 
-/* @keyframes slideIn{
-from{margin-left:-100px;}
-top{margin-left:100px;}
-} */
 h1, h2, h3, button{
     font-family: 'Press Start 2P', cursive;
     text-align: center;
