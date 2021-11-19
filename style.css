@@ -30,13 +30,7 @@ body{
     height: 100vh;
 }
 
-.tombstone{
-    margin-top: 2rem;
-    max-width: 20rem;
-}
-
-
-.fadein{
+.fadeIn{
     animation: fadeIn 5s ease-in-out;
     flex-direction: column;
 }
@@ -102,32 +96,6 @@ body{
     text-align: center;
 }
 
-.errorText{
-    color: red;
-    font-size: 1.1rem;
-    margin-top: 2em;
-}
-
-.biggerFont{
-    font-size: 2.5rem;
-}
-
-.dead p{
-    font-size: 3rem;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 76px;
-    line-height: 1.6;
-    width: 70%;
-}
-
-.dualButtons{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    gap: 5rem;
-}
-
 input{
     border: none;
     padding: 2rem;
@@ -143,6 +111,13 @@ input::placeholder{
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     padding-left: 1em;
+}
+
+.centerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cardBox{
@@ -190,8 +165,6 @@ input::placeholder{
     max-width: 20vw;
 }
 
-
-
 .charImg{
     max-width: 30vw;
     margin-top: -5vh;
@@ -206,12 +179,14 @@ h1, h2, h3, button{
     font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
+
 h1{
     margin-top: 10rem;
     margin-bottom: 10rem;
     font-size: 7rem;
     color: black;
 }
+
 h2{
     font-size: 5rem;
 }
@@ -219,21 +194,24 @@ h2{
 h3{
     font-size: 2rem;
 }
-.centerContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+.errorText{
+    color: red;
+    font-size: 1.1rem;
+    margin-top: 2em;
 }
 
-button{
-width: fit-content;
-font-size: 3rem;
-background-color: black;
-color:rgb(2, 129, 2);
-border: none;
-top: 50%;
-padding: 2rem;
+.biggerFont{
+    font-size: 2.5rem;
+}
+
+.dead p{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 76px;
+    line-height: 1.6;
+    width: 70%;
 }
 
 .redText{
@@ -248,11 +226,29 @@ padding: 2rem;
     width: 70%;
     padding: 0;
 }
+
 .card-list li{
     background: #C4C4C4;   
     list-style: none;
     height: 3vh;
     margin-top: 1.5vw;
+}
+
+button{
+width: fit-content;
+font-size: 3rem;
+background-color: black;
+color:rgb(2, 129, 2);
+border: none;
+top: 50%;
+padding: 2rem;
+}
+
+.dualButtons{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 5rem;
 }
 
 /*KEEP AT BOTTOM TO KEEP FLEX FOR TOGGLE STATES*/

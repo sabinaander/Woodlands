@@ -4,7 +4,7 @@ const state = {
 }
 
 /**
- * Function to check valid/invalid input. If valid, change value of name and move to the next scene.
+ * Function to check valid/invalid input. If valid, change the value of name and move to the next scene.
  */
 function getName() {
     /**  @type {string} */
@@ -89,7 +89,7 @@ const pages = [
     }
     ,
     /**
-     * Scene 3 (Chosen "NOPE" or dead in fight show Tombstone + Try Again? btn)
+     * Scene 3 (Chosen "NOPE" or dead in fight show red background + Try Again? button)
      */
     {
         content:/*html*/ `
@@ -128,7 +128,7 @@ const pages = [
     }
     ,
     /**
-     * Scene 5 (Mushroom-scene. Make a cruicial choice!)
+     * Scene 5 (Mushroom-scene. Make a crucial  choice!)
      */
     {
         content: /*html*/ `
@@ -296,10 +296,10 @@ const pages = [
                        <p>Silence...<br><br>
                         You can't see anything, feel anything.<br><br>
                          It's all... gone.</p><br>
-                    <button class ="redText" onclick="changeScene(DEAD)">EXIT</button>
-
+                        <button class ="redText" onclick="changeScene(DEAD)">EXIT</button>
+                    </div>
                 </div>
-                </div>
+            </div>
         `
         }
     }
@@ -313,11 +313,11 @@ const pages = [
             <div class="centerContainer cardBox">   
                 <div class="cardColumn">
                     <div class="nextContainer">
-                        <p class="smallText redText">"You look a bit tired."</p>
+                        <p class="smallText">"You look a bit tired."</p>
                         <p class="smallText">"Yeah, long night. I'm starving actually"</p>
-                        <p class="smallText redText">"I know what you need, follow me, I don't live to far off from here."</p>
+                        <p class="smallText">"I know what you need, follow me, I don't live to far off from here."</p>
                         <p class="smallText"> The two strangers wander off through the forest until a small cabin appears. They enter and in the kitchen there's a big pot cooking some kind of stew.</p>
-                        <p class="smallText redText">"Take a seat, I'll get you some food, heroes need energy to stay strong."</p>
+                        <p class="smallText">"Take a seat, I'll get you some food, heroes need energy to stay strong."</p>
                         <p class="smallText"> And there they sat, enjoying their meal, when ${state.name} noticed something odd.<br>
                         Pink spots in the stew. Many of them.</p><br>
                         <h3 class="blink"> To be continued...</h3>   
